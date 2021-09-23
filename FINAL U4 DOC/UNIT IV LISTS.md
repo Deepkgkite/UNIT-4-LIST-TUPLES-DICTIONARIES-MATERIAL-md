@@ -6,29 +6,29 @@ Lists: list operations, list slices, list methods, list loop, mutability, aliasi
 
 - **UNIT IV LISTS, TUPLES, DICTIONARIES**
   - [Key Terminologies](#key-terminologies)
-  - Built-in Types in Python – Quick Reference
-  - List 
-    - Introduction
-    - Operations in List
-    - List slice property
-    - Methods involved in List
-    - Looping in List
-    - List mutability
-    - Aliasing the List
-    - Cloning the List
-    - List as Parameters
-  - Tuple
-    - Introduction
-    - Assigning Values to Tuples
-    - Tuple used as return value
-  - Dictionary 
-    - Introduction 
-    - Operations performed in dictionary
-    - Methods in dictionary 
-  - List, Tuple and Dictionary differences
-  - Advanced List Processing
-    - List Comprehension
-    - Nested List
+  - [Built-in Types in Python – Quick Reference](#built-in-types-in-python-quick-reference)
+  - [List](#list) 
+    - [List Introduction](#list-introduction)
+    - [Operations in List](#operations-in-list)
+    - [List slice property](#list-slice-property)
+    - [Methods involved in List](#methods-involved-in-list)
+    - [Looping in List](#looping-in-list)
+    - [List mutability](#list-mutability)
+    - [Aliasing the List](#alisasing-the-list)
+    - [Cloning the List](#cloning-the-list)
+    - [List as Parameters](#list-as-parameters)
+  - [Tuple](#tuple)
+    - [Tuple Introduction](#tuple-introduction)
+    - [Assigning Values to Tuples](#assigning-values-to-tuples)
+    - [Tuple used as return value](#tuple-used-as-return-value)
+  - [Dictionary](#dictionary)
+    - [Dictionary Introduction](#dictionary-introduction)
+    - [Operations performed in dictionary](#operations-performed-in-dictionary)
+    - [Methods in dictionary](#methods-in-dictionary) 
+  - [List, Tuple and Dictionary differences](#list-,-tuple-and-dictionary-differences)
+  - [Advanced List Processing](#advanced-list-processing)
+    - [List Comprehension](#list-comprehension)
+    - [Nested List](#nested-list)
 
 # **OTHER REFERENCES**
 
@@ -171,7 +171,7 @@ print(Dict) 
 
 # **LISTS**
 
-**Introduction**
+**List Introduction**
 
 - A list is a collection of information in a specific order. The list's entries usually referred to as elements or items.
 - Within square brackets, it could be represented as a list of comma-separated elements (scores) [ ].
@@ -409,7 +409,7 @@ If the supplied criterion never becomes wrong, the loop remains indefinite. It c
 
 # **TUPLES**
 
-**Introduction**
+**Tuple Introduction**
 
 - Since lists are mutable, changes made to the elements referenced by the parameter change the same list that the argument is referencing.
 - A tuple is same as list, except that the set of elements is enclosed in parentheses instead of square brackets.
@@ -475,7 +475,7 @@ The parameter name that begins with \* gathers argument into a tuple.
 
 # **Dictionaries**
 
-**Introduction**
+**Dictionary Introduction**
 
 - Dictionary is an unordered collection of elements. An element in dictionary has a key: valuepair.
 - All elements in dictionary are placed inside the curly braces i.e. {}
@@ -497,7 +497,7 @@ The parameter name that begins with \* gathers argument into a tuple.
 
 ![](./img/39.png)
 
-# **DIFFERENCE BETWEEN LIST, TUPLES AND DICTIONARY:**
+# **List, Tuple and Dictionary differences**
 
 ![](./img/40.png)
 

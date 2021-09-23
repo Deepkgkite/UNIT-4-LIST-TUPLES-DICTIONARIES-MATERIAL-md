@@ -75,13 +75,11 @@ Sample Output:
 
 
 **Accessing Elements of a string:**
-
+```python
 str=“WELCOME”
-
 print(str[0],“is first character of the given string”)
-
 print(str[-1],“is last character of the given string”)
-
+```
 **Sample Output:**
 
 ![](./img/2.png)
@@ -96,28 +94,23 @@ Lists are just like dynamic sized arrays, declared in other languages. Lists ne
 Lists in Python can be created by just placing the sequence inside the square brackets [].
 
 **# Creating a List**
-
+```python
 List = []
-
 print("Blank List: ")
-
 print(List)
-
+```
 **Sample Output:**
 
 ![](./img/3.png)
 
 
 
-
-**# Creating a List of various values**
-
+```python
+# Creating a List of various values
 List = [10, “Hello”, 14.25]
-
 print("List of numbers: ")
-
 print(List)
-
+```
 **Sample Output:**
 
 ![](./img/4.png)
@@ -130,15 +123,12 @@ print(List)
 Just like list, tuple is also an ordered collection of Python objects. The only difference between tuple and list is that tuples are immutable i.e. tuples cannot be modified after it is created. It is represented by tuple class.
 
 In Python, tuples are created by placing a sequence of values separated by ‘comma’ with the use of parentheses for grouping of the data sequence. Tuples can contain any number of elements and of any datatype (like strings, integers, list, etc.).
-
-**# Creating a Tuple of various values**
-
+```python
+# Creating a Tuple of various values
 Tuple1 = (10.89, "Hello", 36,'123')
-
 print("Tuple of various values: ")
-
 print(Tuple1)
-
+```
 **Sample Output:**
 
 ![](./img/5.png)
@@ -151,15 +141,12 @@ print(Tuple1)
 In Python, Set is an unordered collection of data type that is iterable, mutable and has no duplicate elements. The order of elements in a set is undefined though it may consist of various elements. Sets can be created by using the built-in set() function with an iterable object or a sequence by placing the sequence inside curly braces, separated by ‘comma’. Type of elements in a set need not be the same, various mixed-up data type values can also be passed to the set.
 
 
-
-**# Creating a Set with a mixed type of values  (Having numbers and strings)** 
-
+```python
+# Creating a Set with a mixed type of values  (Having numbers and strings)
 set1 = set([1, 2, 'Welcome', 4, 'to', 6, 'Python']) 
-
 print("\nSet with the use of Mixed Values") 
-
 print(set1) 
-
+```
 **Sample Output:**
 
 ![](./img/6.png)
@@ -172,15 +159,12 @@ print(set1) 
 Dictionary in Python is an unordered collection of data values, used to store data values like a map, which unlike other Data Types that hold only single value as an element, Dictionary holds key:value pair. Key-value is provided in the dictionary to make it more optimized. Each key-value pair in a Dictionary is separated by a colon :, whereas each key is separated by a ‘comma’. 
 
 In Python, a Dictionary can be created by placing a sequence of elements within curly {} braces, separated by ‘comma’. Values in a dictionary can be of any datatype and can be duplicated, whereas keys can’t be repeated and must be immutable. Dictionary can also be created by the built-in function dict(). An empty dictionary can be created by just placing it to curly braces{}.
-
-**# Creating a Dictionary with Integer Keys** 
-
+```python
+# Creating a Dictionary with Integer Keys
 Dict = {1: 'Welcome', 2: 'to', 3: 'Python'} 
-
 print("\nDictionary with the use of Integer Keys: ") 
-
 print(Dict) 
-
+```
 **Sample Output:**
 
 ![](./img/7.png)
@@ -196,76 +180,67 @@ print(Dict) 
 - List need not be homogeneous in nature. It can hold different values.
 # **Operations on list:**
 - **Creating a List**
-
-\>>>L1=[1,"APPLE",9.5,"123"]
-
+```python
+>>>L1=[1,"APPLE",9.5,"123"]
 >>>print(L1)
+```
 
 ![](./img/8.png)
 
 
 - **Indexing**
-
-\>>>L1=[1,"APPLE",9.5,"123"]
-
-\>>>print(L1[2])
-
-\>>>print(L1[-1])
+```python
+>>>L1=[1,"APPLE",9.5,"123"]
+>>>print(L1[2])
+>>>print(L1[-1])
+```
 
 ![](./img/9.png)
 
 - **Slicing**
-
-\>>> L1=[1,"APPLE",9.5,"123"]
-
+```python
+>>> L1=[1,"APPLE",9.5,"123"]
 >>>print(L1[2:])
+```
 
 ![](./img/10.png)
 
 
 - **Concatenation**
-
-\>>> L1=[1,"APPLE",9.5,"123"]
-
-\>>>L2=[2.86,” MANGO”,”BELL”]
-
-\>>>print(L1+L2)
-
+```python
+>>> L1=[1,"APPLE",9.5,"123"]
+>>>L2=[2.86,” MANGO”,”BELL”]
+>>>print(L1+L2)
+```
 ![](./img/11.png)
 
 - **Repetitions**
-
-\>>>x=[1,2,’a’]
-
-\>>>print(x\*4) **#print(4\*x) also correct**
+```python
+>>>x=[1,2,’a’]
+>>>print(x\*4) **#print(4\*x) also correct**
+```
 
 ![](./img/12.png)
 
 - **Updating**
-
-\>>> L1=[1,"APPLE",9.5,"123"]
-
-\>>>print(L1)
-
-\>>>L1[3]=463
-
+```python
+>>> L1=[1,"APPLE",9.5,"123"]
 >>>print(L1)
+>>>L1[3]=463
+>>>print(L1)
+```
 
 ![](./img/13.png)
 
 
 - **Membership**
-
-\>>> L1=[1,"APPLE",9.5,"123"]
-
-\>>>print(123 in L1)
-
-\>>>false
-
-\>>>print(”123” in L1)
-
-\>>>true
-
+```python
+>>> L1=[1,"APPLE",9.5,"123"]
+>>>print(123 in L1)
+>>>false
+>>>print(”123” in L1)
+>>>true
+```
 **List Slice Property:**
 
 List slicing is an operation that extracts a subset of elements from a list and packages them as another list.
@@ -281,24 +256,17 @@ List slicing is an operation that extracts a subset of elements from a list and 
 - [:] this will print the entire list
 
 **Examples:**
-
+```python
 >>>a=[2,3,8.9,4,7,15,3.5]
-
-\>>>print(a[0:3])
-
-\>>>print(a[:5])
-
-\>>>print(a[2:])
-
-\>>>print(a[:])
-
-\>>>print(a[4:4])
-
-\>>>print(a[0:7:2])
-
-\>>>print(a[::-1])
-
-\>>>print(a[-4:-1])
+>>>print(a[0:3])
+>>>print(a[:5])
+>>>print(a[2:])
+>>>print(a[:])
+>>>print(a[4:4])
+>>>print(a[0:7:2])
+>>>print(a[::-1])
+>>>print(a[-4:-1])
+```
 
 ![](./img/14.png)
 
@@ -316,18 +284,6 @@ List slicing is an operation that extracts a subset of elements from a list and 
 
 ![](./img/16.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
 **Looping in List**
 
 **List using For Loop**
@@ -343,17 +299,9 @@ List slicing is an operation that extracts a subset of elements from a list and 
 
 ![](./img/17.png)
 
-
-
-
-
 **Accessing index of list using For Loop** 
 
 ![](./img/18.png)
-
-
-
-
 
 **Accessing elements of list using range in For Loop**
 
@@ -368,14 +316,7 @@ List slicing is an operation that extracts a subset of elements from a list and 
 
 ![](./img/20.png)
 
-#
-#
-#
-#
-#
-#
-#
-#
+
 # **Infinite Loop:**
 If the supplied criterion never becomes wrong, the loop remains indefinite. It continues to run. The term "infinite loop" refers to such loops.
 
@@ -417,26 +358,12 @@ If the supplied criterion never becomes wrong, the loop remains indefinite. It c
 ![](./img/24.png)
 
 
-
-
-
-
-
-
-
-
-
 **Aliasing the List**
 
 - Creating a copy of a list is called aliasing. When you create a copy both list will be having same memory location. Changes in one list will affect another list.
 - Aliasing refers to having different names for same list values.
 
 ![](./img/25.png)
-
-
-
-
-
 
 - The subscript operator is used to construct and modify a particular list item..
 - When the first member of the list labeled "a" is changed, it also replaces the first item in the list labeled "b."
@@ -473,10 +400,6 @@ If the supplied criterion never becomes wrong, the loop remains indefinite. It c
 ![](./img/28.png)
 
 
-
-
-
-
 **List as Parameters:**
 
 - In python, arguments are passed by reference.
@@ -487,11 +410,6 @@ If the supplied criterion never becomes wrong, the loop remains indefinite. It c
 **EXAMPLES**
 
 ![](./img/29.png)
-
-
-
-
-
 
 
 **TUPLES**
@@ -554,24 +472,11 @@ Multiple values can be assigned to multiple variables using tuple assignment.
 
 ![](./img/35.png)
 
-
-
-
-
-
-
-
-
-
 **Tuple as Argument**
 
 The parameter name that begins with \* gathers argument into a tuple.
 
 ![](./img/36.png)
-
-
-
-
 
 **Dictionaries**
 
@@ -624,12 +529,6 @@ List inside another list is called nested list.
 **Matrix Addition Program**
 
 ![](./img/44.png)
-
-
-
-
-
-
 
 
 ![](./img/45.png)

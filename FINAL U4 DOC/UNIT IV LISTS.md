@@ -171,12 +171,13 @@ print(Dict) 
 
 # **LISTS**
 
-**List Introduction**
+#List Introduction
 
 - A list is a collection of information in a specific order. The list's entries usually referred to as elements or items.
-- Within square brackets, it could be represented as a list of comma-separated elements (scores) [ ].
+- Within square brackets, it could be represented as a list of comma-separated elements (scores) [].
 - List need not be homogeneous in nature. It can hold different values.
-**Operations on list:**
+
+#Operations on list:
 - **Creating a List**
 ```python
 >>>L1=[1,"APPLE",9.5,"123"]
@@ -239,7 +240,7 @@ print(Dict) 
 >>>print(”123” in L1)
 >>>true
 ```
-**List Slice Property:**
+#List Slice Property:
 
 List slicing is an operation that extracts a subset of elements from a list and packages them as another list.
 
@@ -268,7 +269,7 @@ List slicing is an operation that extracts a subset of elements from a list and 
 
 ![](./img/14.png)
 
-**Methods involved in List:**
+#Methods involved in List:
 
 - Methods used in lists are used to manipulate the data quickly.
 - These methods work only on lists.
@@ -282,7 +283,7 @@ List slicing is an operation that extracts a subset of elements from a list and 
 
 ![](./img/16.png)
 
-**Looping in List**
+#Looping in List
 
 **List using For Loop**
 
@@ -318,7 +319,7 @@ List slicing is an operation that extracts a subset of elements from a list and 
 **Infinite Loop:**
 If the supplied criterion never becomes wrong, the loop remains indefinite. It continues to run. The term "infinite loop" refers to such loops.
 
-**List Mutability**
+#List Mutability
 
 - Lists are mutable data types in Python because the list's items can indeed be updated, individual items can be changed, and the sequence of the items can be altered after the list has been constructed.
 - Lists are mutable. (can be changed)
@@ -356,7 +357,7 @@ If the supplied criterion never becomes wrong, the loop remains indefinite. It c
 ![](./img/24.png)
 
 
-**Aliasing the List**
+#Aliasing the List
 
 - Creating a copy of a list is called aliasing. When you create a copy both list will be having same memory location. Changes in one list will affect another list.
 - Aliasing refers to having different names for same list values.
@@ -369,7 +370,7 @@ If the supplied criterion never becomes wrong, the loop remains indefinite. It c
 - They are aliases for the same object. This phenomenon is known as aliasing.
 - To prevent aliasing an object can be created and the contents of the original can be copied which is called cloning.
 
-**Clonning the List**
+#Clonning the List
 
 - To avoid the disadvantages of copying we are using cloning. Creating a copy of a same list of elements with two different memory locations is called cloning.
 - Changes in one list will not affect locations of another list.
@@ -395,7 +396,7 @@ If the supplied criterion never becomes wrong, the loop remains indefinite. It c
 ![](./img/28.png)
 
 
-**List as Parameters:**
+#List as Parameters:
 
 - In python, arguments are passed by reference.
 - If any changes are done in the parameter which refers within the function, then the changes also reflect back in the calling function.
@@ -409,7 +410,7 @@ If the supplied criterion never becomes wrong, the loop remains indefinite. It c
 
 # **TUPLES**
 
-**Tuple Introduction**
+#Tuple Introduction
 
 - Since lists are mutable, changes made to the elements referenced by the parameter change the same list that the argument is referencing.
 - A tuple is same as list, except that the set of elements is enclosed in parentheses instead of square brackets.
@@ -419,6 +420,7 @@ If the supplied criterion never becomes wrong, the loop remains indefinite. It c
 - Tuples are faster than lists.
 - If the user wants to protect the data from accidental changes, tuple can be used.
 - Tuples can be used as keys in dictionaries, while lists can't.
+
 **Operations on Tuples:**
 - Indexing
 - Slicing
@@ -437,7 +439,7 @@ If the supplied criterion never becomes wrong, the loop remains indefinite. It c
 
 Tuple is immutable so changes cannot be done on the elements of a tuple once it is assigned.
 
-**Assigning Value to Tuples:**
+#Assigning Value to Tuples:
 
 - Tuple assignment allows variables on the left of an assignment operator and values of tuple on the right of the assignment operator.
 - Multiple assignment works by creating a tuple of expressions from the right-hand side, and a tuple of targets from the left, and then matching each expression to a target.
@@ -457,7 +459,7 @@ Multiple values can be assigned to multiple variables using tuple assignment.
 
 
 
-**Tuple as return value**
+#Tuple as return value
 
 - A Tuple is a comma separated sequence of items.
 - It is created with or without ().
@@ -475,7 +477,7 @@ The parameter name that begins with \* gathers argument into a tuple.
 
 # **Dictionaries**
 
-**Dictionary Introduction**
+#Dictionary Introduction
 
 - Dictionary is an unordered collection of elements. An element in dictionary has a key: valuepair.
 - All elements in dictionary are placed inside the curly braces i.e. {}
@@ -483,7 +485,7 @@ The parameter name that begins with \* gathers argument into a tuple.
 - The values of a dictionary can be any data type.
 - Keys must be immutable data type (numbers, strings, tuple)
 
-**Operations on dictionary:**
+#Operations on dictionary:
 - Accessing an element
 - Update
 - Add element
@@ -491,21 +493,21 @@ The parameter name that begins with \* gathers argument into a tuple.
 
 ![](./img/37.png)
 
-**Methods in Dictionary**
+#Methods in Dictionary
 
 ![](./img/38.png)
 
 ![](./img/39.png)
 
-# **List, Tuple and Dictionary differences**
+# List, Tuple and Dictionary differences
 
 ![](./img/40.png)
 
 ![](./img/41.png)
 
-# **Advanced List Processing**
+# Advanced List Processing
 
-**List Comprehension:**
+#List Comprehension:
 
 - List comprehensions provide a concise way to apply operations on alist.
 - It creates a new list in which each element is the result of applying a given operation in a list.
@@ -516,7 +518,7 @@ The parameter name that begins with \* gathers argument into a tuple.
 
 ![](./img/42.png)
 
-**Nested List**
+#Nested List
 
 List inside another list is called nested list.
 

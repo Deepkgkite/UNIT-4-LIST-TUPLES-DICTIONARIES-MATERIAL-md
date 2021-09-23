@@ -1,8 +1,8 @@
-﻿**UNIT IV LISTS, TUPLES, DICTIONARIES**
+# **UNIT IV LISTS, TUPLES, DICTIONARIES**
 
 Lists: list operations, list slices, list methods, list loop, mutability, aliasing, cloning lists, list parameters; Tuples: tuple assignment, tuple as return value; Dictionaries: operations and methods; advanced list processing - list comprehension; Illustrative programs: selection sort, insertion sort, mergesort, histogram.
 
-**Table of Contents**
+# **Table of Contents**
 
 - **UNIT IV LISTS, TUPLES, DICTIONARIES**
   - Key Terminologies
@@ -29,9 +29,8 @@ Lists: list operations, list slices, list methods, list loop, mutability, aliasi
   - Advanced List Processing
     - List Comprehension
     - Nested List
-  - Programming examples
 
-**OTHER REFERENCES**
+# **OTHER REFERENCES**
 
 - Understanding the built-in data types – [list](https://www.geeksforgeeks.org/python-list/)
 - Different methods of – [tuples](https://www.geeksforgeeks.org/tuples-in-python/), [methods of tuples](https://www.tutorialspoint.com/python/python_tuples.htm)
@@ -382,16 +381,13 @@ If the supplied criterion never becomes wrong, the loop remains indefinite. It c
 
 
 
-**Cloning using Slicing:			Cloning using List() Method**
+**Cloning using Slicing:**			
 
 ![](./img/26.png)
 
+**Cloning using List() Method**
+
 ![](./img/27.png)
-
-
-
-
-
 
 
 **Cloning using copy() method**
@@ -500,13 +496,13 @@ The parameter name that begins with \* gathers argument into a tuple.
 
 ![](./img/39.png)
 
-**DIFFERENCE BETWEEN LIST, TUPLES AND DICTIONARY:**
+# **DIFFERENCE BETWEEN LIST, TUPLES AND DICTIONARY:**
 
 ![](./img/40.png)
 
 ![](./img/41.png)
 
-**Advanced List Processing**
+# **Advanced List Processing**
 
 **List Comprehension:**
 
@@ -514,7 +510,7 @@ The parameter name that begins with \* gathers argument into a tuple.
 - It creates a new list in which each element is the result of applying a given operation in a list.
 - It consists of brackets containing an expression followed by a “for” clause, then a list.
 - The list comprehension always returns a result list.
-# **Syntax**
+**Syntax**
 **list=[ expression for item in list if conditional ]**
 
 ![](./img/42.png)

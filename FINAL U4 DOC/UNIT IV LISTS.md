@@ -37,7 +37,7 @@ Lists: list operations, list slices, list methods, list loop, mutability, aliasi
 - Different methods of – [tuples](https://www.geeksforgeeks.org/tuples-in-python/), [methods of tuples](https://www.tutorialspoint.com/python/python_tuples.htm)
 - Various ways of accessing [dictionary](https://www.geeksforgeeks.org/python-dictionary/)
 
-**KEY TERMINOLOGIES**
+# **KEY TERMINOLOGIES**
 
 - Mutable – the value of the variable can be changed 
 - Immutable – the value of the variable cannot be changed
@@ -51,7 +51,7 @@ Lists: list operations, list slices, list methods, list loop, mutability, aliasi
 
 
 
-**BUILT-IN TYPES IN PYTHON - QUICK REFERENCE**
+# **BUILT-IN TYPES IN PYTHON - QUICK REFERENCE**
 
 Sequences allow you to logically organize and store a large amount of data. **Sequence types** include strings, Unicode strings, lists, tuples, bytearrays, and range objects. Sets and dictionaries are used to hold non-sequential data. 
 
@@ -92,9 +92,8 @@ print(str[-1],“is last character of the given string”)
 Lists are just like dynamic sized arrays, declared in other languages. Lists need not be homogeneous always which makes it a most powerful tool in Python. A single list may contain DataTypes like Integers, Strings, as well as Objects. Lists are mutable, and hence, they can be altered even after their creation.
 
 Lists in Python can be created by just placing the sequence inside the square brackets [].
-
-**# Creating a List**
 ```python
+# Creating a List
 List = []
 print("Blank List: ")
 print(List)
@@ -171,14 +170,14 @@ print(Dict) 
 
 
 
-**LISTS**
+# **LISTS**
 
 **Introduction**
 
 - A list is a collection of information in a specific order. The list's entries usually referred to as elements or items.
 - Within square brackets, it could be represented as a list of comma-separated elements (scores) [ ].
 - List need not be homogeneous in nature. It can hold different values.
-# **Operations on list:**
+**Operations on list:**
 - **Creating a List**
 ```python
 >>>L1=[1,"APPLE",9.5,"123"]
@@ -308,7 +307,7 @@ List slicing is an operation that extracts a subset of elements from a list and 
 ![](./img/19.png)
 
 
-# **List using While loop**
+**List using While loop**
 - The while loop in Python is used to iterate over a chunk of code as long as the test expression (condition) is true.
 - When the condition is tested and the end result is false, the loop body will be passed over and the first statement after the while loop will be carried out.
 
@@ -317,7 +316,7 @@ List slicing is an operation that extracts a subset of elements from a list and 
 ![](./img/20.png)
 
 
-# **Infinite Loop:**
+**Infinite Loop:**
 If the supplied criterion never becomes wrong, the loop remains indefinite. It continues to run. The term "infinite loop" refers to such loops.
 
 **List Mutability**
@@ -412,7 +411,7 @@ If the supplied criterion never becomes wrong, the loop remains indefinite. It c
 ![](./img/29.png)
 
 
-**TUPLES**
+# **TUPLES**
 
 **Introduction**
 
@@ -420,11 +419,11 @@ If the supplied criterion never becomes wrong, the loop remains indefinite. It c
 - A tuple is same as list, except that the set of elements is enclosed in parentheses instead of square brackets.
 - A tuple is an immutable list. i.e., once a tuple has been created, you can't add elements to a tuple or remove elements from the tuple.
 - But tuple can be converted into list and list can be converted in to tuple.
-# **Benefit of Tuple:**
+**Benefit of Tuple:**
 - Tuples are faster than lists.
 - If the user wants to protect the data from accidental changes, tuple can be used.
 - Tuples can be used as keys in dictionaries, while lists can't.
-# **Operations on Tuples:**
+**Operations on Tuples:**
 - Indexing
 - Slicing
 - Concatenation
@@ -447,9 +446,9 @@ Tuple is immutable so changes cannot be done on the elements of a tuple once it 
 - Tuple assignment allows variables on the left of an assignment operator and values of tuple on the right of the assignment operator.
 - Multiple assignment works by creating a tuple of expressions from the right-hand side, and a tuple of targets from the left, and then matching each expression to a target.
 - Because multiple assignments use tuples to work, it is often termed tuple assignment.
-# **Uses of Tuple assignment:**
+**Uses of Tuple assignment:**
 It is often useful to swap the values of two variables.
-# **Example:**
+**Example:**
 
 ![](./img/33.png)
 
@@ -478,7 +477,7 @@ The parameter name that begins with \* gathers argument into a tuple.
 
 ![](./img/36.png)
 
-**Dictionaries**
+# **Dictionaries**
 
 **Introduction**
 

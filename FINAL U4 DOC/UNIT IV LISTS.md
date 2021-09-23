@@ -50,7 +50,7 @@ Lists: list operations, list slices, list methods, list loop, mutability, aliasi
 
 
 
-# **BUILT-IN TYPES IN PYTHON - QUICK REFERENCE**
+# BUILT-IN TYPES IN PYTHON - QUICK REFERENCE
 
 Sequences allow you to logically organize and store a large amount of data. **Sequence types** include strings, Unicode strings, lists, tuples, bytearrays, and range objects. Sets and dictionaries are used to hold non-sequential data. 
 

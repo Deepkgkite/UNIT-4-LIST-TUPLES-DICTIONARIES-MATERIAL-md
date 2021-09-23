@@ -62,12 +62,12 @@ Sequences allow you to logically organize and store a large amount of data. **Se
 The collection of letters expressed in quotations can be interpreted as the **string**. To construct a string in Python, we can use solitary, double, or triple quotations.
 
 Strings are unchangeable Unicode code point combinations.
+```python
+str="HELLO"
 
-**str**=**"HELLO"**
-
-**print**(str)
-
-**Sample Output:**
+print(str)
+```
+Sample Output:
 
 ![](./img/1.png)
 

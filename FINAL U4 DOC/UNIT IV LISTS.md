@@ -5,7 +5,7 @@ Lists: list operations, list slices, list methods, list loop, mutability, aliasi
 # **Table of Contents**
 
 - **UNIT IV LISTS, TUPLES, DICTIONARIES**
-  - Key Terminologies
+  - [Key Terminologies](#key-terminologies)
   - Built-in Types in Python – Quick Reference
   - List 
     - Introduction

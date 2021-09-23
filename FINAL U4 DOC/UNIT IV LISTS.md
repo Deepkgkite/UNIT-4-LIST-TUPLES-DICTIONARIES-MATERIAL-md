@@ -482,7 +482,8 @@ The parameter name that begins with \* gathers argument into a tuple.
 - Elements in Dictionaries are accessed via keys and not by their position.
 - The values of a dictionary can be any data type.
 - Keys must be immutable data type (numbers, strings, tuple)
-# **Operations on dictionary:**
+
+**Operations on dictionary:**
 - Accessing an element
 - Update
 - Add element

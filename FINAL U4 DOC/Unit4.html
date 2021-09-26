@@ -1,0 +1,449 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome file</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#unit-iv-lists-tuples-dictionaries">UNIT IV LISTS, TUPLES, DICTIONARIES</a></li>
+<li><a href="#table-of-contents">Table of Contents</a></li>
+<li><a href="#other-references">OTHER REFERENCES</a></li>
+<li><a href="#key-terminologies">KEY TERMINOLOGIES</a></li>
+<li><a href="#built-in-types-in-python---quick-reference">BUILT-IN TYPES IN PYTHON - QUICK REFERENCE</a></li>
+<li><a href="#lists">LISTS</a></li>
+<li><a href="#list-introduction">List Introduction</a></li>
+<li><a href="#operations-on-list">Operations on list:</a></li>
+<li><a href="#list-slice-property">List Slice Property:</a></li>
+<li><a href="#methods-involved-in-list">Methods involved in List:</a></li>
+<li><a href="#looping-in-list">Looping in List</a></li>
+<li><a href="#list-mutability">List Mutability</a></li>
+<li><a href="#aliasing-the-list">Aliasing the List</a></li>
+<li><a href="#clonning-the-list">Clonning the List</a></li>
+<li><a href="#list-as-parameters">List as Parameters:</a></li>
+<li><a href="#tuples">TUPLES</a></li>
+<li><a href="#tuple-introduction">Tuple Introduction</a></li>
+<li><a href="#assigning-value-to-tuples">Assigning Value to Tuples:</a></li>
+<li><a href="#tuple-as-return-value">Tuple as return value</a></li>
+<li><a href="#dictionaries">Dictionaries</a></li>
+<li><a href="#dictionary-introduction">Dictionary Introduction</a></li>
+<li><a href="#operations-on-dictionary">Operations on dictionary:</a></li>
+<li><a href="#methods-in-dictionary">Methods in Dictionary</a></li>
+<li><a href="#list-tuple-and-dictionary-differences">List, Tuple and Dictionary differences</a></li>
+<li><a href="#advanced-list-processing">Advanced List Processing</a></li>
+<li><a href="#list-comprehension">List Comprehension:</a></li>
+<li><a href="#nested-list">Nested List</a></li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <p><img src="./img/wc.png" alt=""></p>
+<h1 id="unit-iv-lists-tuples-dictionaries"><strong>UNIT IV LISTS, TUPLES, DICTIONARIES</strong></h1>
+<p>Lists: list operations, list slices, list methods, list loop, mutability, aliasing, cloning lists, list parameters; Tuples: tuple assignment, tuple as return value; Dictionaries: operations and methods; advanced list processing - list comprehension; Illustrative programs: selection sort, insertion sort, mergesort, histogram.</p>
+<h1 id="table-of-contents"><strong>Table of Contents</strong></h1>
+<ul>
+<li><strong>UNIT IV LISTS, TUPLES, DICTIONARIES</strong>
+<ul>
+<li><a href="#key-terminologies">Key Terminologies</a></li>
+<li><a href="#built-in-types-in-python---quick-reference">Built-in Types in Python – Quick Reference</a></li>
+<li><a href="#lists">Lists</a>
+<ul>
+<li><a href="#list-introduction">List Introduction</a></li>
+<li><a href="#operations-in-list">Operations in List</a></li>
+<li><a href="#list-slice-property">List slice property</a></li>
+<li><a href="#methods-involved-in-list">Methods involved in List</a></li>
+<li><a href="#looping-in-list">Looping in List</a></li>
+<li><a href="#list-mutability">List mutability</a></li>
+<li><a href="#alisasing-the-list">Aliasing the List</a></li>
+<li><a href="#cloning-the-list">Cloning the List</a></li>
+<li><a href="#list-as-parameters">List as Parameters</a></li>
+</ul>
+</li>
+<li><a href="#tuple">Tuple</a>
+<ul>
+<li><a href="#tuple-introduction">Tuple Introduction</a></li>
+<li><a href="#assigning-values-to-tuples">Assigning Values to Tuples</a></li>
+<li><a href="#tuple-used-as-return-value">Tuple used as return value</a></li>
+</ul>
+</li>
+<li><a href="#dictionary">Dictionary</a>
+<ul>
+<li><a href="#dictionary-introduction">Dictionary Introduction</a></li>
+<li><a href="#operations-performed-in-dictionary">Operations performed in dictionary</a></li>
+<li><a href="#methods-in-dictionary">Methods in dictionary</a></li>
+</ul>
+</li>
+<li><a href="#list-,-tuple-and-dictionary-differences">List, Tuple and Dictionary differences</a></li>
+<li><a href="#advanced-list-processing">Advanced List Processing</a>
+<ul>
+<li><a href="#list-comprehension">List Comprehension</a></li>
+<li><a href="#nested-list">Nested List</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="other-references"><strong>OTHER REFERENCES</strong></h1>
+<ul>
+<li>Understanding the built-in data types – <a href="https://www.geeksforgeeks.org/python-list/">list</a></li>
+<li>Different methods of – <a href="https://www.geeksforgeeks.org/tuples-in-python/">tuples</a>, <a href="https://www.tutorialspoint.com/python/python_tuples.htm">methods of tuples</a></li>
+<li>Various ways of accessing <a href="https://www.geeksforgeeks.org/python-dictionary/">dictionary</a></li>
+</ul>
+<h1 id="key-terminologies"><strong>KEY TERMINOLOGIES</strong></h1>
+<ul>
+<li>Mutable – the value of the variable can be changed</li>
+<li>Immutable – the value of the variable cannot be changed</li>
+<li>Slice – to print a part of a variable it is especially used in the list. It uses slice operator [:]</li>
+<li>Aliasing – duplicating a list which points to a same memory. If any changes made in original list it will be reflected in the duplicated list. It is different from copying a list.</li>
+<li>Cloning – creating a copy of a list with different memory location. It is also called as copying a list.</li>
+<li>Indexing – accessing the items of a list or tuple through its position.</li>
+<li>Key-Value pair – In dictionary, the data is held key:value manner in which, Values in a dictionary can be of any data type and can be duplicated, whereas keys can’t be repeated and must be&nbsp;immutable.&nbsp;Values in a dictionary can be of any data type and can be duplicated, whereas keys can’t be repeated and must be&nbsp;immutable.&nbsp;Dictionary keys are case sensitive, the same name but different cases of Key will be treated distinctly.</li>
+</ul>
+<h1 id="built-in-types-in-python---quick-reference">BUILT-IN TYPES IN PYTHON - QUICK REFERENCE</h1>
+<p>Sequences allow you to logically organize and store a large amount of data. <strong>Sequence types</strong> include strings, Unicode strings, lists, tuples, bytearrays, and range objects. Sets and dictionaries are used to hold non-sequential data.</p>
+<p><img src="./img/st.png" alt=""></p>
+<p><strong>String:</strong></p>
+<p>The collection of letters expressed in quotations can be interpreted as the <strong>string</strong>. To construct a string in Python, we can use solitary, double, or triple quotations.</p>
+<p>Strings are unchangeable Unicode code point combinations.</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token builtin">str</span><span class="token operator">=</span><span class="token string">"HELLO"</span>
+
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">)</span>
+</code></pre>
+<p>Sample Output:</p>
+<p><img src="./img/1.png" alt=""></p>
+<p><strong>Accessing Elements of a string:</strong></p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token builtin">str</span><span class="token operator">=</span>“WELCOME”
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">,</span>“<span class="token keyword">is</span> first character of the given string”<span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token builtin">str</span><span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>“<span class="token keyword">is</span> last character of the given string”<span class="token punctuation">)</span>
+</code></pre>
+<p><strong>Sample Output:</strong></p>
+<p><img src="./img/2.png" alt=""></p>
+<p><strong>List:</strong></p>
+<p>Lists&nbsp;are just like dynamic sized arrays, declared in other languages. Lists need not be homogeneous always which makes it a most powerful tool in&nbsp;Python. A single list may contain DataTypes like Integers, Strings, as well as Objects. Lists are mutable, and hence, they can be altered even after their creation.</p>
+<p>Lists in Python can be created by just placing the sequence inside the square brackets [].</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token comment"># Creating a List</span>
+List <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Blank List: "</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>List<span class="token punctuation">)</span>
+</code></pre>
+<p><strong>Sample Output:</strong></p>
+<p><img src="./img/3.png" alt=""></p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token comment"># Creating a List of various values</span>
+List <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">10</span><span class="token punctuation">,</span> “Hello”<span class="token punctuation">,</span> <span class="token number">14.25</span><span class="token punctuation">]</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"List of numbers: "</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>List<span class="token punctuation">)</span>
+</code></pre>
+<p><strong>Sample Output:</strong></p>
+<p><img src="./img/4.png" alt=""></p>
+<p><strong>Tuples:</strong></p>
+<p>Just like list,&nbsp;tuple&nbsp;is also an ordered collection of Python objects. The only difference between tuple and list is that tuples are immutable i.e. tuples cannot be modified after it is created. It is represented by&nbsp;tuple&nbsp;class.</p>
+<p>In Python,&nbsp;tuples&nbsp;are created by placing a sequence of values separated by ‘comma’ with the use of parentheses for grouping of the data sequence. Tuples can contain any number of elements and of any datatype (like strings, integers, list, etc.).</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token comment"># Creating a Tuple of various values</span>
+Tuple1 <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token number">10.89</span><span class="token punctuation">,</span> <span class="token string">"Hello"</span><span class="token punctuation">,</span> <span class="token number">36</span><span class="token punctuation">,</span><span class="token string">'123'</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"Tuple of various values: "</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>Tuple1<span class="token punctuation">)</span>
+</code></pre>
+<p><strong>Sample Output:</strong></p>
+<p><img src="./img/5.png" alt=""></p>
+<p><strong>Set</strong></p>
+<p>In Python,&nbsp;Set&nbsp;is an unordered collection of data type that is iterable, mutable and has no duplicate elements. The order of elements in a set is undefined though it may consist of various elements. Sets can be created by using the built-in&nbsp;set()&nbsp;function with an iterable object or a sequence by placing the sequence inside curly braces, separated by ‘comma’. Type of elements in a set need not be the same, various mixed-up data type values can also be passed to the set.</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token comment"># Creating a Set with a mixed type of values  (Having numbers and strings)</span>
+set1 <span class="token operator">=</span> <span class="token builtin">set</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token string">'Welcome'</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token string">'to'</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token string">'Python'</span><span class="token punctuation">]</span><span class="token punctuation">)</span> 
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\nSet with the use of Mixed Values"</span><span class="token punctuation">)</span> 
+<span class="token keyword">print</span><span class="token punctuation">(</span>set1<span class="token punctuation">)</span> 
+</code></pre>
+<p><strong>Sample Output:</strong></p>
+<p><img src="./img/6.png" alt=""></p>
+<p><strong>Dictionary</strong></p>
+<p>Dictionary&nbsp;in Python is an unordered collection of data values, used to store data values like a map, which unlike other Data Types that hold only single value as an element, Dictionary holds&nbsp;key:value&nbsp;pair. Key-value is provided in the dictionary to make it more optimized. Each key-value pair in a Dictionary is separated by a colon&nbsp;:, whereas each key is separated by a ‘comma’.</p>
+<p>In Python, a Dictionary can be created by placing a sequence of elements within curly&nbsp;{}&nbsp;braces, separated by ‘comma’. Values in a dictionary can be of any datatype and can be duplicated, whereas keys can’t be repeated and must be immutable. Dictionary can also be created by the built-in function&nbsp;dict(). An empty dictionary can be created by just placing it to curly braces{}.</p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token comment"># Creating a Dictionary with Integer Keys</span>
+Dict <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">1</span><span class="token punctuation">:</span> <span class="token string">'Welcome'</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">:</span> <span class="token string">'to'</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">:</span> <span class="token string">'Python'</span><span class="token punctuation">}</span> 
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">"\nDictionary with the use of Integer Keys: "</span><span class="token punctuation">)</span> 
+<span class="token keyword">print</span><span class="token punctuation">(</span>Dict<span class="token punctuation">)</span> 
+</code></pre>
+<p><strong>Sample Output:</strong></p>
+<p><img src="./img/7.png" alt=""></p>
+<h1 id="lists"><strong>LISTS</strong></h1>
+<h1 id="list-introduction">List Introduction</h1>
+<ul>
+<li>A list is a collection of information in a specific order. The list’s entries usually referred to as elements or items.</li>
+<li>Within square brackets, it could be represented as a list of comma-separated elements (scores) [].</li>
+<li>List need not be homogeneous in nature. It can hold different values.</li>
+</ul>
+<h1 id="operations-on-list">Operations on list:</h1>
+<ul>
+<li><strong>Creating a List</strong></li>
+</ul>
+<pre class=" language-python"><code class="prism  language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>L1<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">"APPLE"</span><span class="token punctuation">,</span><span class="token number">9.5</span><span class="token punctuation">,</span><span class="token string">"123"</span><span class="token punctuation">]</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span><span class="token keyword">print</span><span class="token punctuation">(</span>L1<span class="token punctuation">)</span>
+</code></pre>
+<p><img src="./img/8.png" alt=""></p>
+<ul>
+<li><strong>Indexing</strong></li>
+</ul>
+<pre class=" language-python"><code class="prism  language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>L1<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">"APPLE"</span><span class="token punctuation">,</span><span class="token number">9.5</span><span class="token punctuation">,</span><span class="token string">"123"</span><span class="token punctuation">]</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span><span class="token keyword">print</span><span class="token punctuation">(</span>L1<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span><span class="token keyword">print</span><span class="token punctuation">(</span>L1<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<p><img src="./img/9.png" alt=""></p>
+<ul>
+<li><strong>Slicing</strong></li>
+</ul>
+<pre class=" language-python"><code class="prism  language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> L1<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">"APPLE"</span><span class="token punctuation">,</span><span class="token number">9.5</span><span class="token punctuation">,</span><span class="token string">"123"</span><span class="token punctuation">]</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span><span class="token keyword">print</span><span class="token punctuation">(</span>L1<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<p><img src="./img/10.png" alt=""></p>
+<ul>
+<li><strong>Concatenation</strong></li>
+</ul>
+<pre class=" language-python"><code class="prism  language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> L1<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">"APPLE"</span><span class="token punctuation">,</span><span class="token number">9.5</span><span class="token punctuation">,</span><span class="token string">"123"</span><span class="token punctuation">]</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>L2<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">2.86</span><span class="token punctuation">,</span>” MANGO”<span class="token punctuation">,</span>”BELL”<span class="token punctuation">]</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span><span class="token keyword">print</span><span class="token punctuation">(</span>L1<span class="token operator">+</span>L2<span class="token punctuation">)</span>
+</code></pre>
+<p><img src="./img/11.png" alt=""></p>
+<ul>
+<li><strong>Repetitions</strong></li>
+</ul>
+<pre class=" language-python"><code class="prism  language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>x<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span>’a’<span class="token punctuation">]</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span><span class="token keyword">print</span><span class="token punctuation">(</span>x\<span class="token operator">*</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">**</span><span class="token comment">#print(4\*x) also correct**</span>
+</code></pre>
+<p><img src="./img/12.png" alt=""></p>
+<ul>
+<li><strong>Updating</strong></li>
+</ul>
+<pre class=" language-python"><code class="prism  language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> L1<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">"APPLE"</span><span class="token punctuation">,</span><span class="token number">9.5</span><span class="token punctuation">,</span><span class="token string">"123"</span><span class="token punctuation">]</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span><span class="token keyword">print</span><span class="token punctuation">(</span>L1<span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>L1<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token number">463</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span><span class="token keyword">print</span><span class="token punctuation">(</span>L1<span class="token punctuation">)</span>
+</code></pre>
+<p><img src="./img/13.png" alt=""></p>
+<ul>
+<li><strong>Membership</strong></li>
+</ul>
+<pre class=" language-python"><code class="prism  language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span> L1<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">"APPLE"</span><span class="token punctuation">,</span><span class="token number">9.5</span><span class="token punctuation">,</span><span class="token string">"123"</span><span class="token punctuation">]</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span><span class="token keyword">print</span><span class="token punctuation">(</span><span class="token number">123</span> <span class="token keyword">in</span> L1<span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>false
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span><span class="token keyword">print</span><span class="token punctuation">(</span>”<span class="token number">123</span>” <span class="token keyword">in</span> L1<span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>true
+</code></pre>
+<h1 id="list-slice-property">List Slice Property:</h1>
+<p>List slicing is an operation that extracts a subset of elements from a list and packages them as another list.</p>
+<p><strong>Syntax:</strong></p>
+<p><strong>Listname[start:stop]</strong></p>
+<p><strong>Listname[start:stop:steps]</strong></p>
+<ul>
+<li>default start value is 0</li>
+<li>default stop value is n-1</li>
+<li>[:] this will print the entire list</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<pre class=" language-python"><code class="prism  language-python"><span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span>a<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">8.9</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">15</span><span class="token punctuation">,</span><span class="token number">3.5</span><span class="token punctuation">]</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span><span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span><span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span><span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span><span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span><span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">:</span><span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span><span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">:</span><span class="token number">7</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span><span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token operator">&gt;&gt;</span><span class="token operator">&gt;</span><span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">4</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+</code></pre>
+<p><img src="./img/14.png" alt=""></p>
+<h1 id="methods-involved-in-list">Methods involved in List:</h1>
+<ul>
+<li>Methods used in lists are used to manipulate the data quickly.</li>
+<li>These methods work only on lists.</li>
+<li>They do not work on the other sequence types that are not mutable, that is, the values they contain cannot be changed, added, or deleted.</li>
+</ul>
+<p><strong>syntax:</strong></p>
+<p><strong>list name.method name( element/index/list)</strong></p>
+<ul>
+<li><img src="./img/15.png" alt=""></li>
+</ul>
+<p><img src="./img/16.png" alt=""></p>
+<h1 id="looping-in-list">Looping in List</h1>
+<p><strong>List using For Loop</strong></p>
+<ul>
+<li>The for loop in Python is used to iterate over a sequence (list, tuple, string) or other iterable objects.</li>
+<li>Iterating on a series is called traversal.</li>
+<li>Loop persists until it arrives at the final element in the series.</li>
+<li>The body of for loop is divided from the rest of the code using indentation.</li>
+</ul>
+<p><strong>EXAMPLES</strong></p>
+<p><strong>Accessing element in list using For Loop</strong></p>
+<p><img src="./img/17.png" alt=""></p>
+<p><strong>Accessing index of list using For Loop</strong></p>
+<p><img src="./img/18.png" alt=""></p>
+<p><strong>Accessing elements of list using range in For Loop</strong></p>
+<p><img src="./img/19.png" alt=""></p>
+<p><strong>List using While loop</strong></p>
+<ul>
+<li>The while loop in Python is used to iterate over a chunk of code as long as the test expression (condition) is true.</li>
+<li>When the condition is tested and the end result is false, the loop body will be passed over and the first statement after the while loop will be carried out.</li>
+</ul>
+<p><strong>Sum of Elements using While Loop</strong></p>
+<p><img src="./img/20.png" alt=""></p>
+<p><strong>Infinite Loop:</strong><br>
+If the supplied criterion never becomes wrong, the loop remains indefinite. It continues to run. The term “infinite loop” refers to such loops.</p>
+<h1 id="list-mutability">List Mutability</h1>
+<ul>
+<li>Lists are mutable data types in Python because the list’s items can indeed be updated, individual items&nbsp;can be changed, and the sequence of the items can be altered after the list has been constructed.</li>
+<li>Lists are mutable. (can be changed)</li>
+<li>Mutability is the ability for certain types of data to be changed without entirely recreating it.</li>
+<li>An item can be changed in a list by accessing it directly as part of the assignment statement.</li>
+<li>Using the indexing operator (square brackets []) on the left side of an assignment, one of the list items can be updated.</li>
+</ul>
+<p><strong>Changing a single element in a List:</strong></p>
+<p><img src="./img/21.png" alt=""></p>
+<p><strong>Changing multiple elements in a List:</strong></p>
+<p><img src="./img/22.png" alt=""></p>
+<p><strong>Removing Elements from list:</strong></p>
+<p><img src="./img/23.png" alt=""></p>
+<p><strong>Squeezing list to insert values:</strong></p>
+<p><img src="./img/24.png" alt=""></p>
+<h1 id="aliasing-the-list">Aliasing the List</h1>
+<ul>
+<li>Creating a copy of a list is called aliasing. When you create a copy both list will be having same memory location. Changes in one list will affect another list.</li>
+<li>Aliasing refers to having different names for same list values.</li>
+</ul>
+<p><img src="./img/25.png" alt=""></p>
+<ul>
+<li>The subscript operator is used to construct and modify a particular list item…</li>
+<li>When the first member of the list labeled “a” is changed, it also replaces the first item in the list labeled “b.”</li>
+<li>A side effect is a term used to describe this process of reform. This occurs since the identifiers a and b relate to a certain list item after the allocation b=a.</li>
+<li>They are aliases for the same object. This phenomenon is known as aliasing.</li>
+<li>To prevent aliasing an object can be created and the contents of the original can be copied which is called cloning.</li>
+</ul>
+<h1 id="clonning-the-list">Clonning the List</h1>
+<ul>
+<li>To avoid the disadvantages of copying we are using cloning. Creating a copy of a same list of elements with two different memory locations is called cloning.</li>
+<li>Changes in one list will not affect locations of another list.</li>
+<li>Cloning is a process of making a copy of the list without modifying the original list.</li>
+<li>Methods of clonning:
+<ul>
+<li>Slicing</li>
+<li>list() method</li>
+<li>copy() method</li>
+</ul>
+</li>
+</ul>
+<p><strong>Cloning using Slicing:</strong></p>
+<p><img src="./img/26.png" alt=""></p>
+<p><strong>Cloning using List() Method</strong></p>
+<p><img src="./img/27.png" alt=""></p>
+<p><strong>Cloning using copy() method</strong></p>
+<p><img src="./img/28.png" alt=""></p>
+<h1 id="list-as-parameters">List as Parameters:</h1>
+<ul>
+<li>In python, arguments are passed by reference.</li>
+<li>If any changes are done in the parameter which refers within the function, then the changes also reflect back in the calling function.</li>
+<li>When a list to a function is passed, the function gets a reference to the list.</li>
+<li>Passing a list as an argument actually passes a reference to the list, not a copy of the list.</li>
+</ul>
+<p><strong>EXAMPLES</strong></p>
+<p><img src="./img/29.png" alt=""></p>
+<h1 id="tuples"><strong>TUPLES</strong></h1>
+<h1 id="tuple-introduction">Tuple Introduction</h1>
+<ul>
+<li>Since lists are mutable, changes made to the elements referenced by the parameter change the same list that the argument is referencing.</li>
+<li>A tuple is same as list, except that the set of elements is enclosed in parentheses instead of square brackets.</li>
+<li>A tuple is an immutable list. i.e., once a tuple has been created, you can’t add elements to a tuple or remove elements from the tuple.</li>
+<li>But tuple can be converted into list and list can be converted in to tuple.<br>
+<strong>Benefit of Tuple:</strong></li>
+<li>Tuples are faster than lists.</li>
+<li>If the user wants to protect the data from accidental changes, tuple can be used.</li>
+<li>Tuples can be used as keys in dictionaries, while lists can’t.</li>
+</ul>
+<p><strong>Operations on Tuples:</strong></p>
+<ul>
+<li>Indexing</li>
+<li>Slicing</li>
+<li>Concatenation</li>
+<li>Repetitions</li>
+<li>Membership</li>
+<li>Comparison</li>
+</ul>
+<p><img src="./img/30.png" alt=""></p>
+<p><img src="./img/31.png" alt=""></p>
+<p><strong>Tuple Methods</strong></p>
+<p><img src="./img/32.png" alt=""></p>
+<p>Tuple is immutable so changes cannot be done on the elements of a tuple once it is assigned.</p>
+<h1 id="assigning-value-to-tuples">Assigning Value to Tuples:</h1>
+<ul>
+<li>Tuple assignment allows variables on the left of an assignment operator and values of tuple on the right of the assignment operator.</li>
+<li>Multiple assignment works by creating a tuple of expressions from the right-hand side, and a tuple of targets from the left, and then matching each expression to a target.</li>
+<li>Because multiple assignments use tuples to work, it is often termed tuple assignment.<br>
+<strong>Uses of Tuple assignment:</strong><br>
+It is often useful to swap the values of two variables.<br>
+<strong>Example:</strong></li>
+</ul>
+<p><img src="./img/33.png" alt=""></p>
+<p><strong>Multiple assignments:</strong></p>
+<p>Multiple values can be assigned to multiple variables using tuple assignment.</p>
+<p><img src="./img/34.png" alt=""></p>
+<h1 id="tuple-as-return-value">Tuple as return value</h1>
+<ul>
+<li>A Tuple is a comma separated sequence of items.</li>
+<li>It is created with or without ().</li>
+<li>A function can return one value. If you want to return more than one value from a function. we can use tuple as return value</li>
+</ul>
+<p><strong>EXAMPLE</strong></p>
+<p><img src="./img/35.png" alt=""></p>
+<p><strong>Tuple as Argument</strong></p>
+<p>The parameter name that begins with * gathers argument into a tuple.</p>
+<p><img src="./img/36.png" alt=""></p>
+<h1 id="dictionaries"><strong>Dictionaries</strong></h1>
+<h1 id="dictionary-introduction">Dictionary Introduction</h1>
+<ul>
+<li>Dictionary is an unordered collection of elements. An element in dictionary has a key: valuepair.</li>
+<li>All elements in dictionary are placed inside the curly braces i.e. {}</li>
+<li>Elements in Dictionaries are accessed via keys and not by their position.</li>
+<li>The values of a dictionary can be any data type.</li>
+<li>Keys must be immutable data type (numbers, strings, tuple)</li>
+</ul>
+<h1 id="operations-on-dictionary">Operations on dictionary:</h1>
+<ul>
+<li>Accessing an element</li>
+<li>Update</li>
+<li>Add element</li>
+<li>Membership</li>
+</ul>
+<p><img src="./img/37.png" alt=""></p>
+<h1 id="methods-in-dictionary">Methods in Dictionary</h1>
+<p><img src="./img/38.png" alt=""></p>
+<p><img src="./img/39.png" alt=""></p>
+<h1 id="list-tuple-and-dictionary-differences">List, Tuple and Dictionary differences</h1>
+<p><img src="./img/40.png" alt=""></p>
+<p><img src="./img/41.png" alt=""></p>
+<h1 id="advanced-list-processing">Advanced List Processing</h1>
+<h1 id="list-comprehension">List Comprehension:</h1>
+<ul>
+<li>List comprehensions provide a concise way to apply operations on alist.</li>
+<li>It creates a new list in which each element is the result of applying a given operation in a list.</li>
+<li>It consists of brackets containing an expression followed by a “for” clause, then a list.</li>
+<li>The list comprehension always returns a result list.<br>
+<strong>Syntax</strong><br>
+<strong>list=[ expression for item in list if conditional ]</strong></li>
+</ul>
+<p><img src="./img/42.png" alt=""></p>
+<h1 id="nested-list">Nested List</h1>
+<p>List inside another list is called nested list.</p>
+<p><img src="./img/43.png" alt=""></p>
+<p><strong>Matrix Addition Program</strong></p>
+<p><img src="./img/44.png" alt=""></p>
+<p><img src="./img/45.png" alt=""></p>
+
+    </div>
+  </div>
+</body>
+
+</html>
